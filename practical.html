@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+       <form action="/submit" method="post" autocomplete="on" novalidate>
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+
+        <label for="fathername">father`s Name:</label><br>
+        <input type="text" id="father`s name" name="father`s name" required><br><br>
+
+        <label for="CGPA">CGPA:</label><br>
+        <input type="number" id="CGPA" name="CGPA" required><br><br>
+
+
+
+        
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" placeholder="student@example.com" required><br><br>
+        
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" minlength="6" required><br><br>
+        
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+        
+        <label for="gender">Gender:</label><br>
+        <select id="gender" name="gender" required>
+            <option value="">--Select--</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="course">course:</label><br>
+        <select id="course" name="course" required>
+            <option value="">--Select--</option>
+            <option value="btech">btech</option>
+            <option value="mca">mca</option>
+            <option value="bca">bca</option>
+            <option value="other">Other</option>
+
+        </select><br><br>
+
+       <label for="tel">mobile no. :</label><br>
+        <input type="tel" id="tel" name="tel" placeholder="31873368354" required><br><br>
+
+
+        
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="3" cols="40" required></textarea><br><br>
+        
+        <button type="submit">Register</button>
+        <button type="reset">Clear</button>
+    </form>
+</body>
+</html>
